@@ -1,139 +1,118 @@
-/* Genel Ayarlar */
-* {
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-  line-height: 1.6;
-  background-color: #f7f7f7;
-}
 
-/* Container */
 .container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-/* Hero */
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url('https://images.unsplash.com/photo-1596079890675-6013a06384b4?auto=format&fit=crop&w=1500&q=80');
-  background-size: cover;
-  background-position: center;
+  background-color: #004080;
   color: white;
+  padding: 40px 0;
   text-align: center;
-  padding: 100px 20px;
-}
-.hero h1 {
-  font-size: 48px;
-}
-.hero p {
-  font-size: 20px;
-  margin: 20px 0;
-}
-.hero .btn {
-  background-color: #ff6600;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-}
-.hero .btn:hover {
-  background-color: #e65c00;
 }
 
-/* Navbar */
-.navbar {
-  background-color: #2c3e50;
-}
-.navbar ul {
+.header-flex {
   display: flex;
+  align-items: center;
   justify-content: center;
-  list-style: none;
+  gap: 20px;
   flex-wrap: wrap;
 }
-.navbar li {
-  margin: 10px 20px;
+
+.header-profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
 }
+
+.btn {
+  background-color: white;
+  color: #004080;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: #003060;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
 .navbar a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
-.navbar a:hover {
-  text-decoration: underline;
-}
 
-/* Section */
 .section {
-  padding: 60px 20px;
-}
-.bg-light {
-  background-color: #eaeaea;
+  padding: 40px 0;
 }
 
-/* Projects */
+.bg-light {
+  background-color: #f4f4f4;
+}
+
+.about-flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
+
 .card {
   background-color: white;
   padding: 20px;
-  border-left: 5px solid #3498db;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  border-radius: 5px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* Hakkımda: Fotoğraflı */
-.about-flex {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 30px;
-}
-.profile-img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 100px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-/* Contact */
 .contact-list {
   list-style: none;
-  font-size: 18px;
-}
-.contact-list li {
-  margin-bottom: 10px;
+  padding: 0;
 }
 
-/* Footer */
+.contact-list li {
+  margin: 10px 0;
+}
+
 .footer {
-  background-color: #2c3e50;
+  background-color: #003060;
   color: white;
   text-align: center;
   padding: 20px 0;
-  margin-top: 40px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .about-flex {
-    flex-direction: column;
-    text-align: center;
-  }
-  .hero h1 {
-    font-size: 32px;
-  }
-  .hero p {
-    font-size: 16px;
-  }
 }
